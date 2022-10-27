@@ -1,0 +1,14 @@
+{
+  "files": {
+    "main.css": "/react-practice-asyncRedux/static/css/main.a3e7d15b.css",
+    "main.js": "/react-practice-asyncRedux/static/js/main.f70f9e17.js",
+    "static/media/addressBook.svg": "/react-practice-asyncRedux/static/media/addressBook.b391a8d25fc0673b9f95944169ddae52.svg",
+    "index.html": "/react-practice-asyncRedux/index.html",
+    "main.a3e7d15b.css.map": "/react-practice-asyncRedux/static/css/main.a3e7d15b.css.map",
+    "main.f70f9e17.js.map": "/react-practice-asyncRedux/static/js/main.f70f9e17.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.a3e7d15b.css",
+    "static/js/main.f70f9e17.js"
+  ]
+}
