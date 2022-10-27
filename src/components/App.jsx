@@ -1,16 +1,31 @@
+import { ToastContainer } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
+import { useEffect } from 'react';
+import { useDispatch } from 'react-redux';
+import { fetchContacts } from 'redux/contactsOperations';
+
+import { ContactForm } from './ContactForm/ContactForm';
+import { ContactList } from './ContactList/ContactList';
+import { SearchFilter } from './SearchFilter/SearchFilter';
+import { Head, SubHead, Container } from './App.styled';
+
 export const App = () => {
+  const dispatch = useDispatch();
+
+  useEffect(() => {
+    dispatch(fetchContacts());
+  }, [dispatch]);
+
   return (
-    <div
-      style={{
-        height: '100vh',
-        display: 'flex',
-        justifyContent: 'center',
-        alignItems: 'center',
-        fontSize: 40,
-        color: '#010101'
-      }}
-    >
-      React homework template
-    </div>
+    <>
+      <ToastContainer position="top-center" />
+      <Container>
+        <Head>Phonebook</Head>
+        <ContactForm />
+        <SubHead>Contacts</SubHead>
+        <SearchFilter />
+        <ContactList />
+      </Container>
+    </>
   );
 };
